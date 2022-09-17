@@ -6,7 +6,7 @@ export const moviesSlice = createSlice({
     {
       title: "top css",
       number: 1,
-      url: "../../../public/assets/video/video1.mp4",
+      url: "../../assets/video/video1.mp4",
       status: true,
     },
     {
@@ -18,20 +18,20 @@ export const moviesSlice = createSlice({
     {
       title: "Awesome animation ",
       number: 3,
-      url: "../../../public/assets/video/video3.mp4",
+      url: "../../assets/video/video3.mp4",
       status: false,
     },
     {
       title: "Awesome menu",
       number: 4,
 
-      url: "../../../public/assets/video/video4.mp4",
+      url: "../../assets/video/video4.mp4",
       status: false,
     },
     {
       title: "Top css and js",
       number: 5,
-      url: "../../../public/assets/video/video5.mp4",
+      url: "../../assets/video/video5.mp4",
       status: false,
     },
   ],
