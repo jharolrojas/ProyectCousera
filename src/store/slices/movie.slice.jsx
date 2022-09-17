@@ -5,7 +5,7 @@ export const movieSlice = createSlice({
   initialState: {
     title: "top css",
     number: 1,
-    url: "../../../public/assets/video/video1.mp4",
+    url: "../../public/assets/video1.mp4"
   },
   reducers: {
     saveMovie: (state, action) => {
