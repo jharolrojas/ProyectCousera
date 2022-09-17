@@ -6,7 +6,7 @@ const ListMovies = ({ element }) => {
   const dispatch = useDispatch();
   const progress = useSelector((state) => state.progress);
   const includeTrue = progress.includes(element.number + 1);
-  const x = progress.includes(element.number);
+  const cd = progress.includes(element.number);
   let icono = "";
 
   const send = () => {
@@ -18,14 +18,10 @@ const ListMovies = ({ element }) => {
           url: element.url,
         })
       );
-    else alert("denegado");
   };
 
-  if (includeTrue) {
-    icono = "fas fa-check";
-  } else if (!x) {
-    icono = "fas fa-lock";
-  }
+  if (includeTrue) icono = "fas fa-check";
+  else if (!cd) icono = "fas fa-lock";
 
   return (
     <div onClick={send}>

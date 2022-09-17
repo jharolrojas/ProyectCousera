@@ -67,10 +67,9 @@ h4 {
 .prevt {
   border-radius: 20px 0 0 20px;
   border: #3b3d4296 1px solid;
+  background-color: #31333c;
 }
-/* .prevt i {
-  color: rgba(255, 255, 255, 0.621);
-} */
+
 .next {
   background-color: #757aff;
   border-radius: 0 20px 20px 0;
@@ -166,6 +165,9 @@ h4 {
 .descriptions p {
   font-size: 15px;
   margin-top: 5px;
+}
+.center p{
+  margin-right: 5px;
 }
 @media (max-width: 1300px) {
   .information {

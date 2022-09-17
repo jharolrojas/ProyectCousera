@@ -6,14 +6,7 @@ import { saveProgressMovie } from "../store/slices/progressMovies.slice";
 import { saveMovie } from "../store/slices/movie.slice";
 import ListPlayerAside from "./ListPlayerAside";
 import { saveMovieTrue } from "../store/slices/containerMoviesTrue.slice";
-import video1 from '../../public/assets/video1.mp4';
-// import video2 from '../../public/assets/video/video2.mp4';
-// import video3 from '../../public/assets/video/video3.mp4';
-// import video4 from '../../public/assets/video/video4.mp4';
-// import video5 from '../../public/assets/video/video5.mp4';
-import profile from '../../public/assets/profile.jpg';
-
-
+import profile from "../../public/assets/profile.jpg";
 
 const PlayerSection = () => {
   const dispatch = useDispatch();
@@ -81,10 +74,9 @@ const PlayerSection = () => {
 
             <div className="buttons">
               <button
-                type="submit"
                 className="prevt"
                 onClick={prev}
-                disabled={movie.number === 1}
+                disabled={movie.number  === 1}
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
@@ -142,10 +134,7 @@ const PlayerSection = () => {
               <div className="card">
                 <h3>About Instructor</h3>
                 <div className="photoInformation">
-                  <img
-                    src={profile}
-                    alt="personPhoto"
-                  />
+                  <img src={profile} alt="personPhoto" />
                   <div>
                     <h4>Natalie Storm</h4>
                     <p className="subTitleProfile">Design Department</p>

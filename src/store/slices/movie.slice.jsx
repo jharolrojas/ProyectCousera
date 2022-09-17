@@ -3,9 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 export const movieSlice = createSlice({
   name: "movie",
   initialState: {
-    title: "top css",
+    title: "Top css",
     number: 1,
-    url: "../../public/assets/video1.mp4"
+    url: "../../assets/video/video1.mp4"
   },
   reducers: {
     saveMovie: (state, action) => {

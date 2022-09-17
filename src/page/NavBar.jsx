@@ -2,7 +2,6 @@ import "../styles/NavBar.css";
 import profile from "../../public/assets/profile.jpg";
 
 const NavBar = ({ show }) => {
-  console.log(show);
   return (
     <div className={` ${show ? "navBar" : " navBar navBarActive"} `}>
       <div>
