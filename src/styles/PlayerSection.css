@@ -1,0 +1,305 @@
+.PlayerSection {
+  width: 100%;
+  display: flex;
+}
+section {
+  margin: 0 5%;
+  min-height: 100vh;
+}
+section h1,
+h3,
+h4 {
+  color: rgba(255, 255, 255, 0.779);
+}
+
+.main,
+.containerTitleandBoton {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.main ol li,
+.subTitle {
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.main ol li samp {
+  color: rgba(255, 255, 255, 0.779);
+}
+
+.containerLiMain,
+.containerTitleandButton,
+.buttons,
+.containerButtons,
+.mainInformation ul,
+.information,
+.photoInformation {
+  display: flex;
+  align-items: baseline;
+}
+.containerLiMain li:nth-child(-n + 2) {
+  display: flex;
+  min-width: 84px;
+}
+.containerButtons samp {
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.621);
+  font-size: 14px;
+}
+
+.containerTitleandButton,
+.buttons {
+  justify-content: space-between;
+}
+.prevt,
+.next {
+  width: 40px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevt {
+  border-radius: 20px 0 0 20px;
+  border: #3b3d4296 1px solid;
+}
+.prevt i {
+  color: rgba(255, 255, 255, 0.621);
+}
+.next {
+  background-color: #757aff;
+  border-radius: 0 20px 20px 0;
+}
+.next i {
+  color: #393838;
+}
+
+.subTitle {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.subTitle p {
+  color: #5c5d5f;
+}
+
+/* movie */
+
+.movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+/* information */
+.containerInformation {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.mainInformation {
+  width: 100%;
+  height: 40px;
+}
+.mainInformation ul li {
+  margin-right: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainInformation li:hover {
+  border-bottom: #757aff 3px solid;
+  color: #fff;
+}
+.selectActive {
+  border-bottom: #757aff 3px solid;
+  color: #fff;
+}
+
+.information {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 20px;
+}
+.informationText {
+  max-width: 80%;
+}
+.informationText > p {
+  margin: 20px 0;
+  line-height: 30px;
+}
+/* card intro informationText */
+.containerCard {
+  padding: 0 20px 0 20px;
+}
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: #31333c;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.photoInformation,
+.descriptions {
+  margin-top: 20px;
+}
+.photoInformation {
+  justify-content: space-around;
+  align-items: center;
+}
+.photoInformation img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.subTitleProfile,
+.descriptions p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1100px) {
+  .PlayerSection {
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  }
+  .information {
+    /* justify-content: center; */
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .containerTitleandButton {
+    display: flex;
+  }
+  h1 {
+    margin: 10px 0;
+    font-size: 2.3rem;
+  }
+  .subTitle {
+    font-size: 1.3rem;
+    margin: 10px 0 20px 0;
+  }
+  .movie {
+    height: 300px;
+  }
+  .information {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 800px) {
+  .containerTitleandButton {
+    display: flex;
+  }
+  h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+  }
+  .subTitle {
+    margin: 10px 0;
+  }
+  .movie {
+    height: 300px;
+  }
+}
+  @media (max-width: 750px) {
+    .containerTitleandButton {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 2rem;
+    }
+    .subTitle {
+      margin: 10px 0;
+    }
+    .movie {
+      height: 300px;
+    }
+    .information {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 400px) {
+    section {
+      margin: 0 3%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+    .containerLiMain li:nth-child(-n + 2) {
+      min-width: 75px;
+    }
+    .containerLiMain ol {
+      flex-wrap: wrap;
+    }
+    .containerButtons samp {
+      margin-right: 5px;
+      font-size: 10px;
+    }
+    .prevt,
+    .next {
+      width: 30px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .subTitle {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 340px) {
+    
+    .PlayerSection section {
+      max-width: 280px;
+      margin: 0 3px;
+    }
+    .containerCard {
+      padding: 0;
+    }
+    .card {
+      width: 280px;
+      height: 300px;
+      background-color: #31333c;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .movie {
+      height: 220px;
+    }
+    h1 {
+      font-size: 1.3rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+    .containerLiMain li:nth-child(-n + 2) {
+      min-width: 60px;
+    }
+    .subTitle {
+      font-size: 0.8rem;
+    }
+  }
+
