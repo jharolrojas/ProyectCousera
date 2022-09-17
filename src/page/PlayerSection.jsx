@@ -3,7 +3,6 @@ import ReactPlayer from "react-player";
 import $ from "jquery";
 import { useDispatch, useSelector } from "react-redux";
 import { saveProgressMovie } from "../store/slices/progressMovies.slice";
-import { useState } from "react";
 import { saveMovie } from "../store/slices/movie.slice";
 import ListPlayerAside from "./ListPlayerAside";
 import { saveMovieTrue } from "../store/slices/containerMoviesTrue.slice";
@@ -15,10 +14,7 @@ const PlayerSection = () => {
   const movies = useSelector((state) => state.movies);
   const movieTrue = useSelector((state) => state.movieTrue);
 
-  // const [paginationMovies, setPaginationMovies] = useState([])
-
   const amount = progress.length - 1;
-  // let pagination = movies.slice(0 , amount)
 
   $(document).ready(function () {
     setTimeout(() => {
@@ -27,10 +23,9 @@ const PlayerSection = () => {
         var time = $(this)[0].currentTime;
         var pencert = 0;
         var name = $(this).parent().attr("class");
-        // console.log(name);
         if (time > 0) pencert = (time * 100) / duration;
 
-        $(".box .percent."+name+" svg circle:nth-child(2)").css(
+        $(".box .percent." + name + " svg circle:nth-child(2)").css(
           "stroke-dashoffset",
           "calc(92 - (92 * " + pencert + ")/100)"
         );
@@ -41,14 +36,14 @@ const PlayerSection = () => {
       });
     }, 1000);
   });
-
+  console.log(progress);
   const next = () => {
-    if (movies[movie.number + 1].status) {
-      dispatch(saveMovie(movies[movie.number + 1]));
+    if (progress.includes(movie.number + 1)) {
+      dispatch(saveMovie(movies[movie.number]));
     }
   };
-  const pre = () => {
-    dispatch(saveMovie(movies[movie.number - 1]));
+  const prev = () => {
+    dispatch(saveMovie(movies[movie.number - 2]));
   };
 
   return (
@@ -58,13 +53,13 @@ const PlayerSection = () => {
           <nav>
             <ol className="containerLiMain">
               <li>
-                <a href="">Courses / </a>
+                <a href="#">Courses / </a>
               </li>
               <li>
-                <a href="">Desing / </a>
+                <a href="#">Desing / </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <samp>Masterclass: Designing for web</samp>{" "}
                 </a>
               </li>
@@ -75,13 +70,24 @@ const PlayerSection = () => {
           <h1>{movie.title}</h1>
           <div className="containerButtons">
             <samp>CHAPTER {movie.number}/5</samp>
+
             <div className="buttons">
-              <div className="prevt" onClick={pre}>
+              <button
+                type="submit"
+                className="prevt"
+                onClick={prev}
+                disabled={movie.number === 1}
+              >
                 <i className="fas fa-chevron-left"></i>
-              </div>
-              <div className="next" onClick={next}>
+              </button>
+
+              <button
+                className="next"
+                onClick={next}
+                disabled={movie.number === 5}
+              >
                 <i className="fas fa-chevron-right"></i>
-              </div>
+              </button>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../styles/NavBar.css";
 import profile from "../../public/assets/profile.jpg";
 

@@ -2,13 +2,13 @@
   width: 400px;
   background-color: #2a2b36;
   padding: 20px;
+  border-radius: 5px;
 }
 
 /* count movie */
 .containerCountMovie,
 .containerBar {
   width: 100%;
-  /* padding: 0 10px; */
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
@@ -20,7 +20,7 @@
 .containerBar {
   justify-content: center;
 }
-.containerBar .checkBar{
+.containerBar .checkBar {
   background-color: #43ccba;
 }
 
@@ -39,38 +39,30 @@
   width: 100%;
   height: 60px;
   display: flex;
-  /* justify-content: space-between; */
-  /* padding: 0 10px; */
 }
 .containerMovies div p {
   color: rgba(255, 255, 255, 0.621);
-
 }
 
 .discussion {
   width: 100%;
-  /* padding: 0 10px; */
 }
 
-
-.discussion div  {
-  margin-top : 8px ;
+.discussion div {
+  margin-top: 8px;
   margin-bottom: 8px;
   display: flex;
-
-
 }
-.discussion div i{
+.discussion div i {
   margin-right: 5px;
 }
 
-.center{
+.center {
   align-items: center;
 }
 
-.discussion .primaryProfile{
+.discussion .primaryProfile {
   margin-top: 20px;
- 
 }
 
 .discussion div img {
@@ -93,7 +85,7 @@
   font-size: 14px;
 }
 .containerNoteAux {
-  width: 100%;
+  max-width: 280px;
   height: 60px;
   background-color: #353640;
   border-radius: 5px;
@@ -104,110 +96,98 @@
   height: 40px;
   margin: 15px;
   border-radius: 100%;
-  background-color: #757AFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #757aff;
   font-size: 14px;
+  position: relative;
+}
+.circlePlay i {
+  position: absolute;
+  top: 13px;
+  left: 15px;
 }
 
 .barAux {
-  width: 250px;
+  width: 60%;
   height: 3px;
-  background-color: #757AFF;
+  background-color: #757aff;
 }
 .hilo {
   border-left: #3b3d42d7 1.5px solid;
   padding: 0 20px;
   flex-direction: column;
-
 }
-.textLinea,.discussion div{
+.textLinea,
+.discussion div {
   line-height: 30px;
 }
 
-
-
-
-
-
 /* percent */
-
-.box .percent{
+.box{
+  cursor: pointer;
+}
+.box .percent {
   position: relative;
-  /* width: 100%; */
+
   height: 40px;
   line-height: 40px;
 }
-.box .percent svg{
-  /* position: relative; */
-  width:50px;
-  height: 50px;
-  margin-right: 10px;
-  /* background-color: pink; */
-
-}
-.levelUp{
-  line-height: 42px;
-}
-.box .percent svg circle{
+.box .percent svg {
   width: 50px;
   height: 50px;
-  fill:none;
+  margin-right: 10px;
+}
+.levelUp {
+  line-height: 42px;
+}
+.box .percent svg circle {
+  width: 50px;
+  height: 50px;
+  fill: none;
   stroke-width: 5;
-  stroke: #000 ;
-  transform: translate(5px,5px);
+  stroke: #000;
+  transform: translate(5px, 5px);
   stroke-dasharray: 92;
   stroke-dashoffset: 92;
-  stroke-linecap:round ;
-
+  stroke-linecap: round;
 }
-.box .percent svg circle:nth-child(1){
-  stroke-dashoffset:0;
-  stroke: #3A3A47;
-
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #3a3a47;
 }
-.box .percent svg circle:nth-child(2){
-  stroke-dashoffset:92;
-  stroke: #3EB2A4;
-
+.box .percent svg circle:nth-child(2) {
+  stroke-dashoffset: 92;
+  stroke: #3eb2a4;
 }
-.box .percent .number{
-position: absolute;
-top:0px;
-left: 17px;
-color: #999;
-max-width: 2px;
- 
+.box .percent .number {
+  position: absolute;
+  top: 0px;
+  left: 17px;
+  color: #999;
+  max-width: 2px;
 }
-@media (max-width:1100px) {
-  .ListPlayerAside{
+@media (max-width: 1100px) {
+  .ListPlayerAside {
     width: 100%;
     margin: 20px;
   }
+  .barAux {
+    width: 50%;
+  }
 }
-.box .percent .number h2{
-  font-size: 18px;
+.box .percent .number h2 {
+  font-size: 13.5px;
 }
-@media (max-width:420px) {
-  .ListPlayerAside{
-    width: 80%;
-    margin: 20px;
+@media (max-width: 420px) {
+  .ListPlayerAside {
+    width: 90%;
   }
   .containerMovies div p {
     font-size: 13px;
   }
-  .box .percent svg{
-   
+  .box .percent svg {
     margin-right: 0px;
-   
-  
   }
-  
+  .barAux {
+    width: 60%;
+  }
 }
-/* @media (max-width:340px) {
-  .ListPlayerAside{
-    width: 280px;
-  }
-  
-} */

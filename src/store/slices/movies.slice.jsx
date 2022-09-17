@@ -1,46 +1,41 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Cambiamos moviesSlice por el nombre de nuestro slice (usersSlice, toDosSlice...)
 export const moviesSlice = createSlice({
   name: "movies",
   initialState: [
     {
-      title: "hola jharito",
+      title: "top css",
       number: 1,
       url: "../../../public/assets/video/video1.mp4",
       status: true,
     },
     {
-      title: "Motion in UI Design",
+      title: "Creative javascripit",
       number: 2,
       url: "../../../public/assets/video/video2.mp4",
       status: false,
     },
     {
-      title: "Fundamentls of Web ",
+      title: "Awesome animation ",
       number: 3,
       url: "../../../public/assets/video/video3.mp4",
       status: false,
     },
     {
-      title: "Improving Visual Skill",
+      title: "Awesome menu",
       number: 4,
 
       url: "../../../public/assets/video/video4.mp4",
       status: false,
     },
     {
-      title: "Finding Inspiration",
+      title: "Top css and js",
       number: 5,
       url: "../../../public/assets/video/video5.mp4",
       status: false,
     },
   ],
-  reducers: {
-    
-    
-
-  },
+  reducers: {},
 });
 
 export const {} = moviesSlice.actions;

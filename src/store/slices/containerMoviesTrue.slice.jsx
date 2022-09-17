@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Cambiamos containerMoviesTrueSlice por el nombre de nuestro slice (usersSlice, toDosSlice...)
 export const containerMoviesTrueSlice = createSlice({
   name: "movieTrue",
   initialState: [
@@ -12,12 +11,7 @@ export const containerMoviesTrueSlice = createSlice({
   ],
   reducers: {
     saveMovieTrue: (state, action) => {
-        // const verificar = state.find(element => action.payload?.number == element?.number)
-        // if (!verificar) {
-          state.push(action.payload);
-            
-        // }
-      
+      state.push(action.payload);
     },
   },
 });

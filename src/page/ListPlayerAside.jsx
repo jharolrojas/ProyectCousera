@@ -5,10 +5,10 @@ import ListMovies from "../components/ListMovies";
 import { useSelector } from "react-redux";
 
 const ListPlayerAside = () => {
- const color = useSelector(state => state.progress)
+  const color = useSelector((state) => state.progress);
   const [count, setCount] = useState(1);
- const movies = useSelector(state => state.movies)
- console.log(color);
+  const movies = useSelector((state) => state.movies);
+  console.log(color);
   return (
     <div className="ListPlayerAside">
       <h3>Masterclass: Designing for web</h3>
@@ -25,17 +25,11 @@ const ListPlayerAside = () => {
         <div className={color[3] == 4 ? "checkBar" : null}></div>
         <div className={color[4] == 5 ? "checkBar" : null}></div>
       </div>
-      
+
       <div className="containerMovies">
-      
-     {movies.map(element =>(
-      <ListMovies element={element} key={element.number}/>
-      
-     ))}
-       
-        
-       
-       
+        {movies.map((element) => (
+          <ListMovies element={element} key={element.number} />
+        ))}
       </div>
       <div className="discussion">
         <h3>Discussion</h3>

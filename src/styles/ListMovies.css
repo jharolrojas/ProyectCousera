@@ -1,9 +1,8 @@
-.box .percent p i{
-    color: inherit;
-    margin-left: 10px
-
+.box .percent p i {
+  color: inherit;
+  margin-left: 10px;
 }
-.containerMovies div .check{
-    color: #43ccba;
-    text-decoration:line-through;
-  }
+.containerMovies div .check {
+  color: #43ccba;
+  text-decoration: line-through;
+}

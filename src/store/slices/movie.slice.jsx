@@ -1,10 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Cambiamos movieSlice por el nombre de nuestro slice (usersSlice, toDosSlice...)
 export const movieSlice = createSlice({
   name: "movie",
   initialState: {
-    title: "What is Interation Design",
+    title: "top css",
     number: 1,
     url: "../../../public/assets/video/video1.mp4",
   },

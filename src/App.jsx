@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { NavBar, PlayerSection, ListPlayerAside } from "./page";
+import { NavBar, PlayerSection} from "./page";
 import logo from "../public/assets/logo.png";
 
 function App() {
@@ -8,8 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* {show && <h1>holadasdasd</h1>} */}
-      <div className="buttomMain "  onClick={() => setShow(!show)} >
+      <div className="buttomMain " onClick={() => setShow(!show)}>
         <buttom>
           <img src={logo} alt="" />
         </buttom>
