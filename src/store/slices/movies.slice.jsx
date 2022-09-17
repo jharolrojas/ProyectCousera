@@ -12,7 +12,7 @@ export const moviesSlice = createSlice({
     {
       title: "Creative javascripit",
       number: 2,
-      url: "../../../public/assets/video/video2.mp4",
+      url: "../../assets/video/video2.mp4",
       status: false,
     },
     {
