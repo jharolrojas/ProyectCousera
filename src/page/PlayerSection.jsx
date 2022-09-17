@@ -6,6 +6,14 @@ import { saveProgressMovie } from "../store/slices/progressMovies.slice";
 import { saveMovie } from "../store/slices/movie.slice";
 import ListPlayerAside from "./ListPlayerAside";
 import { saveMovieTrue } from "../store/slices/containerMoviesTrue.slice";
+import video1 from '../../public/assets/video/video1.mp4';
+import video2 from '../../public/assets/video/video2.mp4';
+import video3 from '../../public/assets/video/video3.mp4';
+import video4 from '../../public/assets/video/video4.mp4';
+import video5 from '../../public/assets/video/video5.mp4';
+import profile from '../../public/assets/profile.jpg';
+
+
 
 const PlayerSection = () => {
   const dispatch = useDispatch();
@@ -135,7 +143,7 @@ const PlayerSection = () => {
                 <h3>About Instructor</h3>
                 <div className="photoInformation">
                   <img
-                    src="../../public/assets/profile.jpg"
+                    src={profile}
                     alt="personPhoto"
                   />
                   <div>
